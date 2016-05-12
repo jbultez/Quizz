@@ -1,0 +1,14 @@
+<ion-view title="Questions">
+    <ion-content class="has-header" padding="true">
+        <div class="list card">
+            <div class="item item-text-wrap">{{question}}</div>
+            <div class="item item-body">
+                <div class="list">
+                    <ion-radio ng-class="{ red: red[$index], green: green[$index] }" ng-click="choix($index)" ng-disabled="disabled" ng-repeat="reponse in reponses">{{reponse}}</ion-radio>
+                </div>
+            </div>
+        </div>
+        <div ng-if='edit==true' ng-show='resp' class="item item-body" >{{resp}}</div>
+        <button ng-show="bouton" ng-click="suivant()" class="button button-dark button-block icon-right" ng-class="iconeBouton">{{texteBouton}}</button>
+    </ion-content>
+</ion-view>

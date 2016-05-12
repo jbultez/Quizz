@@ -1,0 +1,26 @@
+.scroll-content {
+    background-image: url(../img/herbe.jpeg);
+    background-size: cover;
+}
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+.item {
+    background-color: #61D92D;
+}
+.item-radio .item-content {
+    background-color: white;
+}
+.overflow-scroll {
+    overflow-y: auto;
+}
+
+ion-content {
+    background-color: black;
+}
+body {
+    background-color: ;
+}
